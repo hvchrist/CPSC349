@@ -42,9 +42,9 @@ $(document).ready(function() {
             if (key < numPosts) {
               $('#main').append(template);
               // set the title and body
-              $('#comments-temp').html(val.comments);
+              $('#comments-temp').html(val.body);
               // change the id of the post
-              $('#comments-temp').attr('id', 'body-' + val.id);
+              $('#comments-temp').attr('id', 'comments-' + val.id);
               $('/n').replaceWith('<br>');
             }
           });
