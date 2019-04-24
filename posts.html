@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>Posts and Comments</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.css">
+</head>
+<body>
+    <header>
+        <h1>Posts and Comments</h1>
+    </header>
+    <section id="main">
+      <script id="template" type="text/custom-temp">
+        <article>
+            <h2 data-posts="title" id="post-temp"></h2>
+            <p data-posts="body" id="body-temp"></p>
+
+            <button data-posts="id" value="1" type="button">Show comments</button>
+
+                <section class="comments"  hidden>
+
+                <p data-comments="body"> id="comments-temp"</p>
+
+                </section>
+        </article>
+      </script>
+    </section>
+    <script src="comments.js"></script>
+
+</body>
+</html>
